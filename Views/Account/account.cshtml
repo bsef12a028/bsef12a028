@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "account";
+}
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" action="/Account/check">
+    <h1 style="margin-left:40%;margin-top:50px;">Sign In</h1>
+    <br />
+    <b style="margin-left:40%;font-size:20px;">Name</b><input type="text" name="n1" />
+    <b style="margin-left:40%;font-size: 20px;">Password</b><input type="password" name="1" />
+
+
+    <br />
+    <br />
+ 
+
+    <button type="submit" class="btn btn-primary btn-large" style="margin-left:40%;">Sign In</button>
+
+    <a href="~/images/Samsung1.jpg" style="padding-top:3em;"><img src="~/images/Samsung1.jpg" style="width:800px;height:600px;padding-left:4em;" /></a>
+</form>

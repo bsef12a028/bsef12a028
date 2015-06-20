@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "signUp";
+}
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.8.2.js"></script>
+<br />
+
+            <form  method="post" action="/SignUp/AddUser?'UName='+userName">
+                        <h1 style="margin-left:40%;margin-top:50px;">Sign Up</h1>
+                     <br />
+                <b style="margin-left:40%;font-size:20px;">Name</b><input type="text"  id="UserName"  /> 
+                <p style="margin-left:40%;" id="p1"></p>
+                @Scripts.Render("~/bundles/jquery")                      
+                <br />
+                <br />
+                <br />
+                
+                <b style="margin-left:40%;font-size: 20px;">Password</b><input type="password" name="p1" />     
+                <b style="margin-left:40%;font-size: 20px;">Email</b><input type="text" name="e1" /> 
+                
+                @*@Html.Label("Name");
+                <div class="editor-field">
+                    @Html.TextBoxFor(Model => Model.Name)
+                    @Html.ValidationMessageFor(Model => Model.Name)
+                </div>
+
+                @Html.Label("Password");
+                <div class="editor-field">
+                    @Html.PasswordFor(Model => Model.Password)
+                    @Html.ValidationMessageFor(Model => Model.Password)
+                </div>
+
+                @Html.Label("E-mail");
+                <div class="editor-field">
+                    @Html.TextBoxFor(Model => Model.Email)
+                    @Html.ValidationMessageFor(Model => Model.Password)
+                </div>*@
+                       
+                      
+                        <br />
+                        <br />
+                <input type="submit" class="btn btn-primary btn-large" style="margin-left:40%;" value="Sign Up" />
+
+                
+
+            </form>
+      <input type="button" id="b1" value="Check" style="margin-left:30%;float:right;margin-right:20px;margin-top:30px;" />
+<a href="~/images/Huawei.jpg" style="padding-top:3em;"><img src="~/images/Huawei.jpg" style="width:800px;height:400px;padding-left:4em;" /></a>
+
+<script>
+
+    $(document).ready(function () {
+
+        $('#p1').hide();
+
+        $('#b1').click(function () {
+
+            var userName = $('#UserName').val();
+
+            $.getJSON("/SignUp/CheckUser?UName=" + userName, function (data) {
+                if (data == true) {
+                    $('#p1').show();
+                    $('#p1').text("User already exists in database");
+
+                }
+                else {
+                    $('#p1').show();
+                    $('#p1').text("User Name is available");
+                    
+
+                }
+            });
+
+        });
+
+    });
+</script>

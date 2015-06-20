@@ -1,0 +1,88 @@
+﻿<!DOCTYPE>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/jquery-2.1.4.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml" class="html">
+<head>
+    <title>www.yesmobile.com.pk</title>
+    <link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+ 
+    
+</head>
+
+<body>
+
+
+
+    <img src="~/images/img1.jpg" id="img1" class="img-thumbnail" />
+
+    <a href="/SignUp/signUp"><input id="SignIn" value="Sign Up" type="button"></a>
+    <a href="/SignIn/signIn"><input type="button" id="SignIn" value="Sign In" /></a>
+    <a href="/Account/account"><input type="button" id="SignIn" value="My Account" /></a>
+
+    @*<a href="lumia.html" id="category"><b>search by category</b></a>*@
+    <br />
+
+    <table id="t01">
+        <tr>
+            <td class="c1"><a href="/Home/Index" class="c2"><i>Home</i></a></td>
+            <td class="c1"><a href="/Terms/Term" class="c2"><i>Terms & Conditions</i></a></td>
+            <td class="c1"><a href="/DeliveryInfo/Delinfo" class="c2"><i>Shopping Cart</i></a></td>
+            <td class="c1"> <a href="/AJAX/AjaxWorking" class="c2"><i>Search</i></a></td>
+            <td class="c1"><a href="/Payment/payment" class="c2"><i>Payment Method</i></a></td>
+            @*<td class="c1"><a href="Home.html" class="c2"><i>How To Order</i></a></td>*@
+        </tr>
+    </table>
+    <br />
+
+
+
+    <marquee style="behavior:scroll; direction:left;">
+        @*<div id="dv1">*@
+
+        <a href="~/images/Rivo-RRX55.jpg"><img src="~/images/Rivo-RRX55.jpg" class="mov" /></a>
+        <a href="~/images/Samsung-Galaxy-S6-edge.jpg"><img src="~/images/Samsung-Galaxy-S6-edge.jpg" class="mov" /></a>
+        <a href="~/images/Samsung_Galaxy_E7.jpg"><img src="~/images/Samsung_Galaxy_E7.jpg" class="mov" /></a>
+        <a href="~/images/QMobile_QTab.jpg"><img src="~/images/QMobile_QTab.jpg" class="mov" /></a>
+        <a href="~/images/QMobile-NZ8.jpg"><img src="~/images/QMobile-NZ8.jpg" class="mov" /></a>
+        <a href="~/images/oppo-joy.png"><img src="~/images/oppo-joy.png" class="mov" /></a>
+        <a href="~/images/Lumia-535.png"><img src="~/images/Lumia-535.png" class="mov" /></a>
+        <a href="~/images/oppo_7.png"><img src="~/images/oppo_7.png" class="mov" /></a>
+        <a href="~/images/Voice-Xtreme-X3-130x175.jpg"><img src="~/images/Voice-Xtreme-X3-130x175.jpg" class="mov" /></a>
+        @*</div>*@
+    </marquee>
+    <br />
+    <div class="row" style="float:left;margin-left:10px;padding-top:8em;">
+        <table style="float:left;margin-left:15px;">
+            <tr><td style="border: 1px solid black;padding:4px;background-color:whitesmoke;"> <b>Search By Brand</b> </td></tr>
+            <tr><td style="padding-top:1em;"><a href="/Huawei/Huawei_Mobile" style="color:grey;">HUAWEI</a></td></tr>
+            <tr><td style="padding: 2px;"><a href="/Qmobile/Q_Mobile" style="color:grey;">Qmobile</a></td></tr>
+            <tr><td @*style="padding: 2px;"*@><a href="/Samsung/samsung_Mobile" style="color:grey;padding-bottom:2em;">Samsung</a></td></tr>
+            @*<tr><td style="padding: 2px;"><a href="" style="color:grey;">Apple iPhones</a></td></tr>
+            <tr><td style="padding-bottom:1em;"><a href="" style="color:grey;">MICROSOFT</a></td></tr>*@
+            <tr><td style="border: 1px solid black;padding:4px;background-color:whitesmoke;"> <b>Search By Screen</b> </td></tr>
+           
+            <tr><td style="padding: 2px;"><a href="/Screen/screen" style="color:grey;">3.0 inch - 4.0 inch</a></td></tr>
+            <tr><td style="padding: 2px;"><a href="/Screen1/screen1" style="color:grey;">4.1 inch - 5.0 inch</a></td></tr>
+            <tr><td style="padding: 2px;"><a href="/Screen2/screen2" style="color:grey;">5.1 inch - 6.9 inch</a></td></tr>
+            <tr><td style="border: 1px solid black;padding:5px;background-color:whitesmoke;"> <b>Search By RAM</b> </td></tr>
+          
+            <tr><td style="padding: 2px;"><a href="/Ram1/RAM1" style="color:grey;">1 GB RAM</a></td></tr>
+            <tr><td style="padding: 2px;"><a href="/Ram2/RAM2" style="color:grey;">2 GB RAM</a></td></tr>
+            <tr><td style="padding-bottom:1em;"><a href="/Ram3/RAM3" style="color:grey;">3 GB RAM</a></td></tr>
+            <tr><td style="border: 1px solid black;padding:5px;background-color:whitesmoke;"> <b>Search By SIM</b> </td></tr>
+            <tr><td style="padding-top:1em;"><a href="/Sim1/SIM1" style="color:grey;">1 SIM Phones</a></td></tr>
+            <tr><td style="padding: 2px;"><a href="/Sim2/SIM2" style="color:grey;">2 SIM Phones</a></td></tr>
+            
+           <tr> <td style="padding-bottom:2em;"><a href="~/images/huawei-p8-max.jpg"><img src="~/images/huawei-p8-max.jpg" style="width:300px;height:300px;" /></a></td></tr>
+
+            
+        </table>
+    </div>
+  
+
+                @RenderBody();
+</body>
+
+
+</html>
